@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "chenge-big-button-on-twitter",
+    "short_name": "kusodeka",
+    "version": "1.0.0",
+    "default_locale": "ja_JP",
+    "description": "change kusodeka icon on twitter to push button more easily",
+    "page_action": {
+        "default_icon": {
+            "19": "icon19.png"
+        },
+        "default_title": "Ext title",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://tweetdeck.twitter.com/*", "https://twitter.com/*" ],
+            "js": [ "script.js" ]
+        }
+    ]
+}
